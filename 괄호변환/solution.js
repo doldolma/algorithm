@@ -8,6 +8,7 @@ const isRight = (string) => {
   return true;
 };
 function solution(p) {
+  
   if(!p || isRight(p)) return p;
   // 균형잡히게 나누기..
   let open = 0, close = 0, i=0;
