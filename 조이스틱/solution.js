@@ -13,7 +13,7 @@ function solution(name) {
       const cursorMove = distance(cursor, i, nameLength);
       const moveCount = cursorMove + distance(0, alphabet.indexOf(name[i]));
       count += moveCount;
-      cursor = i;
+      cursor = i; 
   }
   
   // while(!visited.every(x => x)) {
