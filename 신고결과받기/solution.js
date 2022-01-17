@@ -18,9 +18,7 @@ function solution(id_list, report, k) {
   Object.keys(reported.count).forEach(key => {
      if(reported.count[key] >= k) mailList.push(key);
   });
-  return id_list.map(id => {
-      return reported[id].filter(user => mailList.includes(user)).length;
-  });
+  return id_list.map(id => reported[id].filter(user => mailList.includes(user)).length);
 }
 
 
